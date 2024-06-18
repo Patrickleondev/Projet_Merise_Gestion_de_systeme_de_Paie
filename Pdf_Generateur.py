@@ -148,7 +148,7 @@ def creer_bulletin_paie_pdf(fichier, nom, prenom, poste, salaire, date_paiement,
 
     # Signature
     signature_data = [
-        ["Signature Du Directeur :", signature]
+        ["Signature Du DRH :", signature]
     ]
     signature_table = Table(signature_data, colWidths=[150, 300])
     signature_table.setStyle(TableStyle([
@@ -158,6 +158,17 @@ def creer_bulletin_paie_pdf(fichier, nom, prenom, poste, salaire, date_paiement,
         ('BOTTOMPADDING', (0, 0), (1, -1), 5)
     ]))
     elements.append(signature_table)
-
+    
+    signature_data2 = [
+        ["Signature de l'Employé:", nom + " "+prenom]
+    ]
+    signature_table = Table(signature_data2, colWidths=[150, 300])
+    signature_table.setStyle(TableStyle([
+        ('ALIGN', (0, 0), (1, -1), 'LEFT'),
+        ('FONTNAME', (0, 0), (1, -1), 'Helvetica'),
+        ('FONTSIZE', (0, 0), (1, -1), 10),
+        ('BOTTOMPADDING', (0, 0), (1, -1), 5)
+    ]))
+    elements.append(signature_table)
     doc.build(elements)
 
