@@ -19,7 +19,7 @@ Ce projet vise à développer un système complet de gestion de paie, intégrant
 ```
 cd Gestion_de_Systeme_de_Paie
 pip3 install -r requirements.txt
-python3 app.py
+python3 main.py
 ```
 
 Pour plus de détails, veuillez consulter le dépôt GitHub du projet.
