@@ -13,5 +13,14 @@ Ce projet vise à développer un système complet de gestion de paie, intégrant
 - **Automatisation des salaires :** Calcul automatique et génération de bulletins de paie au format PDF.
 - **Suivi des promotions :** Historique des promotions pour une gestion équitable des carrières.
 
+
+**Installation et exécution**
+
+```
+pip3 install -r requirements.txt
+cd Gestion_de_Paie
+python3 app.py
+```
+
 Pour plus de détails, veuillez consulter le dépôt GitHub du projet.
 
