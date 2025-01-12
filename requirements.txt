@@ -1,1 +1,3 @@
-
+tkcalendar
+Pillow
+reportlab
