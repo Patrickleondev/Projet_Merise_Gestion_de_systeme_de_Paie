@@ -17,8 +17,8 @@ Ce projet vise à développer un système complet de gestion de paie, intégrant
 **Installation et exécution**
 
 ```
-pip3 install -r requirements.txt
 cd Gestion_de_Systeme_de__Paie
+pip3 install -r requirements.txt
 python3 app.py
 ```
 
